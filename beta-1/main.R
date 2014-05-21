@@ -1,4 +1,4 @@
-setwd('/Users/t-rex-Box/Desktop/work/analyze_survey_monkey/beta-1')
+setwd('/Users/t-rex-Box/Desktop/work/analyze_survey_gizmo/beta-1')
 
 responseData <- read.csv("20140514181801-SurveyExport.csv", header = TRUE, stringsAsFactors = FALSE)
 names(responseData)
@@ -32,9 +32,9 @@ non_stem_a_response_data = approachable_responseData[approachable_responseData$"
                                                      !(approachable_responseData$"Email" %in% sent_non_stem_cs$Email), ]
 dim(non_stem_a_response_data)
 
-new_batch_cs = cs_a_responseData[1:30,]
-new_batch_non_cs_stem = non_cs_stem_a_response_data[1:30,]
-new_batch_non_stem  = non_stem_a_response_data[1:30,]
+new_batch_cs = cs_a_responseData[1:60,]
+new_batch_non_cs_stem = non_cs_stem_a_response_data[1:60,]
+new_batch_non_stem  = non_stem_a_response_data[1:60,]
 
 write.csv(new_batch_cs$Email, file="batch-cs.csv", row.names = FALSE,)
 write.csv(new_batch_non_cs_stem$Email, file="batch-non-cs-stem.csv", row.names = FALSE)
