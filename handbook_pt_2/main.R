@@ -1,4 +1,4 @@
-setwd('/Users/t-rex-Box/Desktop/work/analyze_survey_monkey/')
+setwd('/Users/t-rex-Box/Desktop/work/analyze_survey_gizmo/handbook_pt_2')
 
 responseData <- read.csv("20140503040935-SurveyExport.csv", header = TRUE, stringsAsFactors = FALSE)
 
